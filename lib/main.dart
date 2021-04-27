@@ -16,6 +16,7 @@ import 'login.dart';
 void main() {
   runApp(
     MaterialApp(
+      title: "Ülkeleri Tanıyalım",
       debugShowCheckedModeBanner: false,
       initialRoute: "/",
       routes: {
