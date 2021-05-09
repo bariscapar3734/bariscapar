@@ -1,9 +1,9 @@
-import 'package:dunyaprojem_app/arnavutluk/askeri.dart';
-import 'package:dunyaprojem_app/arnavutluk/din.dart';
-import 'package:dunyaprojem_app/arnavutluk/iklim.dart';
-import 'package:dunyaprojem_app/arnavutluk/lojistik.dart';
-import 'package:dunyaprojem_app/arnavutluk/tarih.dart';
-import 'package:dunyaprojem_app/arnavutluk/tarim.dart';
+import 'package:dunyaprojem_app/ulkeler_sayfasi/arnavutluk/askeri.dart';
+import 'package:dunyaprojem_app/ulkeler_sayfasi/arnavutluk/din.dart';
+import 'package:dunyaprojem_app/ulkeler_sayfasi/arnavutluk/iklim.dart';
+import 'package:dunyaprojem_app/ulkeler_sayfasi/arnavutluk/lojistik.dart';
+import 'package:dunyaprojem_app/ulkeler_sayfasi/arnavutluk/tarih.dart';
+import 'package:dunyaprojem_app/ulkeler_sayfasi/arnavutluk/tarim.dart';
 import 'package:flutter/material.dart';
 
 class arnavutluk extends StatefulWidget {

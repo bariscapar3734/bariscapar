@@ -1,17 +1,16 @@
-import 'package:dunyaprojem_app/drawermenusayfalari/natoulkeleri.dart';
-import 'package:dunyaprojem_app/login.dart';
-import 'package:dunyaprojem_app/ulke_detay/andorra.dart';
-import 'package:dunyaprojem_app/ulke_detay/arnavutluk.dart';
-import 'package:dunyaprojem_app/ulke_detay/avusturya.dart';
-import 'package:dunyaprojem_app/ulke_detay/azerbaycan.dart';
-import 'package:dunyaprojem_app/ulke_detay/belarus.dart';
-import 'package:dunyaprojem_app/ulke_detay/belcika.dart';
-import 'package:dunyaprojem_app/ulke_detay/birlesik_krallik.dart';
-import 'package:dunyaprojem_app/ulke_detay/bosna_hersek.dart';
-import 'package:dunyaprojem_app/ulke_detay/bulgaristan.dart';
+import 'drawermenusayfalari/natoulkeleri.dart';
+import 'ulkeler_sayfasi/ulke_detay/andorra.dart';
+import 'ulkeler_sayfasi/ulke_detay/arnavutluk.dart';
+import 'ulkeler_sayfasi/ulke_detay/avusturya.dart';
+import 'ulkeler_sayfasi/ulke_detay/azerbaycan.dart';
+import 'ulkeler_sayfasi/ulke_detay/belarus.dart';
+import 'ulkeler_sayfasi/ulke_detay/belcika.dart';
+import 'ulkeler_sayfasi/ulke_detay/birlesik_krallik.dart';
+import 'ulkeler_sayfasi/ulke_detay/bosna_hersek.dart';
+import 'ulkeler_sayfasi/ulke_detay/bulgaristan.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'ulke_detay/almanya.dart';
+import 'ulkeler_sayfasi/ulke_detay/almanya.dart';
 import 'login.dart';
 
 void main() {
@@ -56,7 +55,7 @@ class _AnasayfaState extends State<Anasayfa> {
     // fotoğraf listem
     "assets/anasayfa/bayraklar/turkiye.png",
     "assets/anasayfa/bayraklar/amerika.png",
-    "assets/anasayfa/bayraklar/almanya.png",
+    "assets/anasayfa/bayraklar/ulkeler_sayfasi.ulkeler_sayfasi.almanya.png",
     "assets/anasayfa/bayraklar/bulgaristan.png",
   ];
 

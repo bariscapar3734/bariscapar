@@ -1,33 +1,32 @@
-import 'package:dunyaprojem_app/almanya/askeri.dart';
-import 'package:dunyaprojem_app/almanya/din.dart';
-import 'package:dunyaprojem_app/almanya/iklim.dart';
-import 'package:dunyaprojem_app/almanya/lojistik.dart';
-import 'package:dunyaprojem_app/almanya/tarih.dart';
-import 'package:dunyaprojem_app/almanya/tarim.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:dunyaprojem_app/ulkeler_sayfasi/andorra/askeri.dart';
+import 'package:dunyaprojem_app/ulkeler_sayfasi/andorra/din.dart';
+import 'package:dunyaprojem_app/ulkeler_sayfasi/andorra/iklim.dart';
+import 'package:dunyaprojem_app/ulkeler_sayfasi/andorra/lojistik.dart';
+import 'package:dunyaprojem_app/ulkeler_sayfasi/andorra/tarih.dart';
+import 'package:dunyaprojem_app/ulkeler_sayfasi/andorra/tarim.dart';
 import 'package:flutter/material.dart';
 
-class almanya extends StatefulWidget {
+class andorra extends StatefulWidget {
   @override
-  _almanyaState createState() => _almanyaState();
+  _andorraState createState() => _andorraState();
 }
 
-class _almanyaState extends State<almanya> {
-  List<almanyabilgi> _almanyabilgi;
+class _andorraState extends State<andorra> {
+  List<ulkebilgi> _ulkebilgi;
 
   @override
   void initState() {
     super.initState();
-    _almanyabilgi = [
-      almanyabilgi(
+    _ulkebilgi = [
+      ulkebilgi(
         "Avrupa",
-        "Berlin",
+        "Andorra la Vella",
         "Hristiyan",
-        "Almanca",
-        "+ 49",
-        "357.386 km²",
+        "Katalanca",
+        "+ 376",
+        "486 km²",
         "EURO",
-        "83 Milyon",
+        "77 Bin",
       ),
     ];
   }
@@ -44,10 +43,10 @@ class _almanyaState extends State<almanya> {
                 left: 60.0,
                 right: 10.0,
               ),
-              child: Text('Almanya'),
+              child: Text('Andorra'),
             ),
             Image.asset(
-              'assets/anasayfa/bayraklar/almanya.png',
+              'assets/anasayfa/bayraklar/andorra.png',
               fit: BoxFit.cover,
               width: 60,
             ),
@@ -63,7 +62,7 @@ class _almanyaState extends State<almanya> {
                 scrollDirection: Axis.vertical,
                 shrinkWrap: true,
                 physics: ScrollPhysics(),
-                itemCount: _almanyabilgi.length,
+                itemCount: _ulkebilgi.length,
                 itemBuilder: (context, index) {
                   return Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -77,7 +76,7 @@ class _almanyaState extends State<almanya> {
                           children: [
                             Ink.image(
                               image: AssetImage(
-                                "assets/ulkedetay/harita/almanyaharita.jpg",
+                                "assets/ulkedetay/harita/andorraharita.png",
                               ),
                               height: 200,
                               fit: BoxFit.cover,
@@ -107,7 +106,7 @@ class _almanyaState extends State<almanya> {
                                 Expanded(
                                   child: ListTile(
                                     title: Text(
-                                      _almanyabilgi[index].bulundugukita,
+                                      _ulkebilgi[index].bulundugukita,
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,
@@ -123,7 +122,7 @@ class _almanyaState extends State<almanya> {
                                 Expanded(
                                   child: ListTile(
                                     title: Text(
-                                      _almanyabilgi[index].baskenti,
+                                      _ulkebilgi[index].baskenti,
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,
@@ -146,7 +145,7 @@ class _almanyaState extends State<almanya> {
                                 Expanded(
                                   child: ListTile(
                                     title: Text(
-                                      _almanyabilgi[index].din,
+                                      _ulkebilgi[index].din,
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,
@@ -162,7 +161,7 @@ class _almanyaState extends State<almanya> {
                                 Expanded(
                                   child: ListTile(
                                     title: Text(
-                                      _almanyabilgi[index].dil,
+                                      _ulkebilgi[index].dil,
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,
@@ -185,7 +184,7 @@ class _almanyaState extends State<almanya> {
                                 Expanded(
                                   child: ListTile(
                                     title: Text(
-                                      _almanyabilgi[index].telefonkod,
+                                      _ulkebilgi[index].telefonkod,
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,
@@ -201,7 +200,7 @@ class _almanyaState extends State<almanya> {
                                 Expanded(
                                   child: ListTile(
                                     title: Text(
-                                      _almanyabilgi[index].alan,
+                                      _ulkebilgi[index].alan,
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,
@@ -224,7 +223,7 @@ class _almanyaState extends State<almanya> {
                                 Expanded(
                                   child: ListTile(
                                     title: Text(
-                                      _almanyabilgi[index].parabirim,
+                                      _ulkebilgi[index].parabirim,
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,
@@ -240,7 +239,7 @@ class _almanyaState extends State<almanya> {
                                 Expanded(
                                   child: ListTile(
                                     title: Text(
-                                      _almanyabilgi[index].nufus,
+                                      _ulkebilgi[index].nufus,
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,
@@ -273,7 +272,7 @@ class _almanyaState extends State<almanya> {
                                 onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => almanyatarih())),
+                                        builder: (context) => andorratarih())),
                               ),
                               height: 200,
                               fit: BoxFit.cover,
@@ -304,7 +303,7 @@ class _almanyaState extends State<almanya> {
                                 onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => almanyadin())),
+                                        builder: (context) => andorradin())),
                               ),
                               height: 200,
                               fit: BoxFit.cover,
@@ -335,7 +334,7 @@ class _almanyaState extends State<almanya> {
                                 onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => almanyaaskeri())),
+                                        builder: (context) => andorraaskeri())),
                               ),
                               height: 200,
                               fit: BoxFit.cover,
@@ -367,7 +366,7 @@ class _almanyaState extends State<almanya> {
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) =>
-                                            almanyalojistik())),
+                                            andorralojistik())),
                               ),
                               height: 200,
                               fit: BoxFit.cover,
@@ -398,7 +397,7 @@ class _almanyaState extends State<almanya> {
                                 onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => almanyatarim())),
+                                        builder: (context) => andorratarim())),
                               ),
                               height: 200,
                               fit: BoxFit.cover,
@@ -429,7 +428,7 @@ class _almanyaState extends State<almanya> {
                                 onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => almanyaiklim())),
+                                        builder: (context) => andorraiklim())),
                               ),
                               height: 200,
                               fit: BoxFit.cover,
@@ -457,7 +456,7 @@ class _almanyaState extends State<almanya> {
   }
 }
 
-class almanyabilgi {
+class ulkebilgi {
   String bulundugukita;
   String baskenti;
   String din;
@@ -466,6 +465,6 @@ class almanyabilgi {
   String alan;
   String parabirim;
   String nufus;
-  almanyabilgi(this.bulundugukita, this.baskenti, this.din, this.dil,
+  ulkebilgi(this.bulundugukita, this.baskenti, this.din, this.dil,
       this.telefonkod, this.alan, this.parabirim, this.nufus);
 }

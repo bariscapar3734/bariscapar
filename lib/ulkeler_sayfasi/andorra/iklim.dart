@@ -1,4 +1,3 @@
-import 'package:dunyaprojem_app/ulke_detay/andorra.dart';
 import 'package:flutter/material.dart';
 
 class andorraiklim extends StatefulWidget {

@@ -1,32 +1,33 @@
-import 'package:dunyaprojem_app/andorra/askeri.dart';
-import 'package:dunyaprojem_app/andorra/din.dart';
-import 'package:dunyaprojem_app/andorra/iklim.dart';
-import 'package:dunyaprojem_app/andorra/lojistik.dart';
-import 'package:dunyaprojem_app/andorra/tarih.dart';
-import 'package:dunyaprojem_app/andorra/tarim.dart';
+import 'package:dunyaprojem_app/ulkeler_sayfasi/almanya/askeri.dart';
+import 'package:dunyaprojem_app/ulkeler_sayfasi/almanya/din.dart';
+import 'package:dunyaprojem_app/ulkeler_sayfasi/almanya/lojistik.dart';
+import 'package:dunyaprojem_app/ulkeler_sayfasi/almanya/tarih.dart';
+import 'package:dunyaprojem_app/ulkeler_sayfasi/almanya/iklim.dart';
+import 'package:dunyaprojem_app/ulkeler_sayfasi/almanya/tarim.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class andorra extends StatefulWidget {
+class almanya extends StatefulWidget {
   @override
-  _andorraState createState() => _andorraState();
+  _almanyaState createState() => _almanyaState();
 }
 
-class _andorraState extends State<andorra> {
-  List<ulkebilgi> _ulkebilgi;
+class _almanyaState extends State<almanya> {
+  List<almanyabilgi> _almanyabilgi;
 
   @override
   void initState() {
     super.initState();
-    _ulkebilgi = [
-      ulkebilgi(
+    _almanyabilgi = [
+      almanyabilgi(
         "Avrupa",
-        "Andorra la Vella",
+        "Berlin",
         "Hristiyan",
-        "Katalanca",
-        "+ 376",
-        "486 km²",
+        "Almanca",
+        "+ 49",
+        "357.386 km²",
         "EURO",
-        "77 Bin",
+        "83 Milyon",
       ),
     ];
   }
@@ -43,10 +44,10 @@ class _andorraState extends State<andorra> {
                 left: 60.0,
                 right: 10.0,
               ),
-              child: Text('Andorra'),
+              child: Text('Almanya'),
             ),
             Image.asset(
-              'assets/anasayfa/bayraklar/andorra.png',
+              'assets/anasayfa/bayraklar/almanya.png',
               fit: BoxFit.cover,
               width: 60,
             ),
@@ -62,7 +63,7 @@ class _andorraState extends State<andorra> {
                 scrollDirection: Axis.vertical,
                 shrinkWrap: true,
                 physics: ScrollPhysics(),
-                itemCount: _ulkebilgi.length,
+                itemCount: _almanyabilgi.length,
                 itemBuilder: (context, index) {
                   return Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -76,7 +77,7 @@ class _andorraState extends State<andorra> {
                           children: [
                             Ink.image(
                               image: AssetImage(
-                                "assets/ulkedetay/harita/andorraharita.png",
+                                "assets/ulkedetay/harita/almanyaharita.jpg",
                               ),
                               height: 200,
                               fit: BoxFit.cover,
@@ -106,7 +107,7 @@ class _andorraState extends State<andorra> {
                                 Expanded(
                                   child: ListTile(
                                     title: Text(
-                                      _ulkebilgi[index].bulundugukita,
+                                      _almanyabilgi[index].bulundugukita,
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,
@@ -122,7 +123,7 @@ class _andorraState extends State<andorra> {
                                 Expanded(
                                   child: ListTile(
                                     title: Text(
-                                      _ulkebilgi[index].baskenti,
+                                      _almanyabilgi[index].baskenti,
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,
@@ -145,7 +146,7 @@ class _andorraState extends State<andorra> {
                                 Expanded(
                                   child: ListTile(
                                     title: Text(
-                                      _ulkebilgi[index].din,
+                                      _almanyabilgi[index].din,
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,
@@ -161,7 +162,7 @@ class _andorraState extends State<andorra> {
                                 Expanded(
                                   child: ListTile(
                                     title: Text(
-                                      _ulkebilgi[index].dil,
+                                      _almanyabilgi[index].dil,
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,
@@ -184,7 +185,7 @@ class _andorraState extends State<andorra> {
                                 Expanded(
                                   child: ListTile(
                                     title: Text(
-                                      _ulkebilgi[index].telefonkod,
+                                      _almanyabilgi[index].telefonkod,
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,
@@ -200,7 +201,7 @@ class _andorraState extends State<andorra> {
                                 Expanded(
                                   child: ListTile(
                                     title: Text(
-                                      _ulkebilgi[index].alan,
+                                      _almanyabilgi[index].alan,
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,
@@ -223,7 +224,7 @@ class _andorraState extends State<andorra> {
                                 Expanded(
                                   child: ListTile(
                                     title: Text(
-                                      _ulkebilgi[index].parabirim,
+                                      _almanyabilgi[index].parabirim,
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,
@@ -239,7 +240,7 @@ class _andorraState extends State<andorra> {
                                 Expanded(
                                   child: ListTile(
                                     title: Text(
-                                      _ulkebilgi[index].nufus,
+                                      _almanyabilgi[index].nufus,
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 16,
@@ -272,7 +273,7 @@ class _andorraState extends State<andorra> {
                                 onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => andorratarih())),
+                                        builder: (context) => almanyatarih())),
                               ),
                               height: 200,
                               fit: BoxFit.cover,
@@ -303,7 +304,7 @@ class _andorraState extends State<andorra> {
                                 onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => andorradin())),
+                                        builder: (context) => almanyadin())),
                               ),
                               height: 200,
                               fit: BoxFit.cover,
@@ -334,7 +335,7 @@ class _andorraState extends State<andorra> {
                                 onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => andorraaskeri())),
+                                        builder: (context) => almanyaaskeri())),
                               ),
                               height: 200,
                               fit: BoxFit.cover,
@@ -366,7 +367,7 @@ class _andorraState extends State<andorra> {
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) =>
-                                            andorralojistik())),
+                                            almanyalojistik())),
                               ),
                               height: 200,
                               fit: BoxFit.cover,
@@ -397,7 +398,7 @@ class _andorraState extends State<andorra> {
                                 onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => andorratarim())),
+                                        builder: (context) => almanyatarim())),
                               ),
                               height: 200,
                               fit: BoxFit.cover,
@@ -428,7 +429,7 @@ class _andorraState extends State<andorra> {
                                 onTap: () => Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => andorraiklim())),
+                                        builder: (context) => almanyaiklim())),
                               ),
                               height: 200,
                               fit: BoxFit.cover,
@@ -456,7 +457,7 @@ class _andorraState extends State<andorra> {
   }
 }
 
-class ulkebilgi {
+class almanyabilgi {
   String bulundugukita;
   String baskenti;
   String din;
@@ -465,6 +466,6 @@ class ulkebilgi {
   String alan;
   String parabirim;
   String nufus;
-  ulkebilgi(this.bulundugukita, this.baskenti, this.din, this.dil,
+  almanyabilgi(this.bulundugukita, this.baskenti, this.din, this.dil,
       this.telefonkod, this.alan, this.parabirim, this.nufus);
 }
