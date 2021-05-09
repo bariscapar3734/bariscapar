@@ -1,4 +1,5 @@
 import 'package:dunyaprojem_app/drawermenusayfalari/natoulkeleri.dart';
+import 'package:dunyaprojem_app/login.dart';
 import 'package:dunyaprojem_app/ulke_detay/andorra.dart';
 import 'package:dunyaprojem_app/ulke_detay/arnavutluk.dart';
 import 'package:dunyaprojem_app/ulke_detay/avusturya.dart';
@@ -200,7 +201,7 @@ class _AnasayfaState extends State<Anasayfa> {
 
   @override
   Widget build(BuildContext context) {
-    VeriModeli iletilenArgumanlar = ModalRoute.of(context).settings.arguments;
+    VeriModeli2 iletilenArgumanlar = ModalRoute.of(context).settings.arguments;
     return DefaultTabController(
       length: 5,
       child: SafeArea(
